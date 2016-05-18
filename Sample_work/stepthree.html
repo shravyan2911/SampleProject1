@@ -1,0 +1,5 @@
+<div class="text-center" ng-switch="{{formData.fname ?true:false}}">
+    <div ng-switch-when="true">{{(formData.fname + formData.lname | uppercase)}}  {{ ", "+ formData.phone +" will start for "+formData.location+" on " +formData.StartDate+" and End on "+formData.EndDate}}
+</div>
+     <div ng-switch-when="false">Please fill the complete form..</div>
+</div>
